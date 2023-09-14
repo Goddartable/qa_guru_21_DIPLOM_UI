@@ -1,7 +1,7 @@
 package com.demoqa.utils;
 
 public class UserVariables {
-    public static String
+    /*public static String
             userFirstName = RandomUtils.getRandomFirstName(),
             userLastName = RandomUtils.getRandomLastName(),
             userEmail = RandomUtils.getRandomEmail(),

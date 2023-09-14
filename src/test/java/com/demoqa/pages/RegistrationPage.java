@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.executeJavaScript;
 
 public class RegistrationPage {
-    TableResponsiveComponent checkResponsiveInput = new TableResponsiveComponent();
+   /* TableResponsiveComponent checkResponsiveInput = new TableResponsiveComponent();
     CalendarComponent calendar = new CalendarComponent();
     private SelenideElement
             firstNameInput = $("#firstName"),

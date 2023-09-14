@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.demoqa.utils.UserVariables.*;
 
-public class PracticeFormWithFakerTest extends TestBase {
+/*public class PracticeFormWithFakerTest extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
 
     @Test

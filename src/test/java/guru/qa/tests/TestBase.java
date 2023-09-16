@@ -22,9 +22,7 @@ public class TestBase {
         Configuration.browserVersion = System.getProperty("browserVersion", "100.0");
         Configuration.pageLoadStrategy = "eager";
         Configuration.baseUrl = "https://rshbdigital.ru/";
-        //Configuration.remote = "https://" + System.getProperty("remote") + "/wd/hub";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-
+        Configuration.remote = "https://" + System.getProperty("remote") + "/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Map<String, Object> value = new HashMap<>();
@@ -33,9 +31,7 @@ public class TestBase {
         capabilities.setCapability("selenoid:options", value);
 
         Configuration.browserCapabilities = capabilities;
-
     }
-
 
     @AfterEach
     void afterEachTest() {
@@ -44,7 +40,5 @@ public class TestBase {
         ReportAttachments.pageSource();
         ReportAttachments.browserConsoleLogs();
         Selenide.closeWebDriver();
-
-
     }
 }

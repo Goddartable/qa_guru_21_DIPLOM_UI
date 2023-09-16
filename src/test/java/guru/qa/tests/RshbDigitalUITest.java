@@ -11,7 +11,6 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static guru.qa.utils.UserVariables.*;
 
-
 public class RshbDigitalUITest extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
 

@@ -1,10 +1,9 @@
-package com.demoqa.tests;
+package guru.qa.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import com.demoqa.attachments.ReportAttachments;
-import org.junit.jupiter.api.AfterAll;
+import guru.qa.attachments.ReportAttachments;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.AfterEach;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -15,7 +14,7 @@ import java.util.Map;
 
 
 public class TestBase {
-   @BeforeAll
+    @BeforeAll
     static void beforeAll() {
         SelenideLogger.addListener("Allure", new AllureSelenide());
         Configuration.browser = System.getProperty("browser", "chrome");
@@ -24,7 +23,6 @@ public class TestBase {
         Configuration.pageLoadStrategy = "eager";
         Configuration.baseUrl = "https://rshbdigital.ru/";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-
 
 
         DesiredCapabilities capabilities = new DesiredCapabilities();

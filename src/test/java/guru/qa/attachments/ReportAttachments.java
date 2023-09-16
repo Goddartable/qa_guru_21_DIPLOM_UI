@@ -1,4 +1,4 @@
-package com.demoqa.attachments;
+package guru.qa.attachments;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;

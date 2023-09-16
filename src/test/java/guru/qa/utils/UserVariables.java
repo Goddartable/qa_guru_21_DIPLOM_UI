@@ -1,7 +1,7 @@
-package com.demoqa.utils;
+package guru.qa.utils;
 
-public class UserVariables {
-    /*public static String
+/*public class UserVariables {
+    public static String
             userFirstName = RandomUtils.getRandomFirstName(),
             userLastName = RandomUtils.getRandomLastName(),
             userEmail = RandomUtils.getRandomEmail(),
@@ -26,4 +26,4 @@ public class UserVariables {
             studentPics = "Picture",
             studentAddr = "Address",
             studentSaS = "State and City";
-}
+}*/

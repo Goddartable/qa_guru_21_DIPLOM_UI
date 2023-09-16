@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Configuration.baseUrl;
 
+
 public class RshbDigitalUITest extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
 
@@ -63,12 +64,14 @@ public class RshbDigitalUITest extends TestBase {
     @Tag("Intech")
     @Owner("Goddartable")
     @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Поиск \"О-Нас\"")
+    @DisplayName("Поиск \"О Нас\"")
     void checkRshbAboutUs() {
         registrationPage
                 .openPage(baseUrl)
                 .clickOnButton(".menu-btn")
-                .clickMenuLink("a[class=nav-link]", "О Нас");
-     //           .clickMenuLink("div .menu-btn", "О платформе");
+                .clickMenuLink(".index-page__menu", "О нас")
+                .clickMenuLink(".index-page__menu", "О платформе")
+                .checkText(".main", "РСХБ в цифре — продукт объединённой команды Россельхозбанка и РСХБ-Интеха.");
+
     }
 }

@@ -15,7 +15,7 @@ public class RshbDigitalUITest extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
 
     @Test
-    @Tag("Intech")
+    @Tag("remote")
     @Owner("Goddartable")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Проверка работоспособности главной страницы")
@@ -26,7 +26,7 @@ public class RshbDigitalUITest extends TestBase {
     }
 
     @Test
-    @Tag("Intech")
+    @Tag("remote")
     @Owner("Goddartable")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка поиска города во вкладке \"Нанимаем\"")
@@ -39,7 +39,7 @@ public class RshbDigitalUITest extends TestBase {
     }
 
     @Test
-    @Tag("Intech")
+    @Tag("remote")
     @Owner("Goddartable")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка работоспособности страницы \"Интех\"")
@@ -50,7 +50,7 @@ public class RshbDigitalUITest extends TestBase {
     }
 
     @Test
-    @Tag("Intech")
+    @Tag("remote")
     @Owner("Goddartable")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Поиск текста \"Генеральная лицензия Банка России № 3349 от 12 августа 2015\"")
@@ -61,7 +61,7 @@ public class RshbDigitalUITest extends TestBase {
     }
 
     @Test
-    @Tag("Intech")
+    @Tag("remote")
     @Owner("Goddartable")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка работоспособности страницы \"О Нас\"")

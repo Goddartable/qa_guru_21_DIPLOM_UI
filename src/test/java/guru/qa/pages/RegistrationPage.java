@@ -1,6 +1,7 @@
 package guru.qa.pages;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
 
@@ -19,12 +20,12 @@ public class RegistrationPage {
         $(selector).shouldHave(Condition.text(textElement));
         return this;
     }
-    @Step("Выбираем пункт меню \"{value}\"")
+    @Step("Выбираем пункт меню \"{menuText}\"")
     public RegistrationPage clickMenuLink(String selector, String menuText) {
         $(selector).$(byText(menuText)).click();
         return this;
     }
-    @Step("Начинаем поиск значения \"{value}\"")
+    @Step("Начинаем поиск значения \"{textValue}\"")
     public RegistrationPage searchInput(String textValue) {
         $("div .vacancies__search-city").click();
         $("div .vacancies__search-items").$(byText(textValue)).click();

@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Configuration.baseUrl;
+import static guru.qa.utils.UserVariables.*;
 
 
 public class RshbDigitalUITest extends TestBase {
@@ -18,11 +19,11 @@ public class RshbDigitalUITest extends TestBase {
     @Tag("Intech")
     @Owner("Goddartable")
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Проверка работоспособности https://rshbdigital.ru/")
+    @DisplayName("Проверка работоспособности главной страницы")
     void checkRshbDigitalMain() {
         registrationPage
                 .openPage(baseUrl)
-                .checkText(".index-page", "РСХБ в цифре — продукт объединённой команды Россельхозбанка и РСХБ-Интеха.");
+                .checkText(indexElement, rsDigital);
     }
 
     @Test
@@ -33,45 +34,45 @@ public class RshbDigitalUITest extends TestBase {
     void checkRshbDigitalVacancy() {
         registrationPage
                 .openPage(baseUrl)
-                .clickMenuLink("div .row-gap", "Нанимаем")
-                .searchInput("Тверь")
-                .checkText("div .card-vacancy__header-info", "Тверь");
+                .clickMenuLink(rowGap, hireButton)
+                .searchInput(citySearch)
+                .checkText(vacancyHeader, citySearch);
     }
 
     @Test
     @Tag("Intech")
     @Owner("Goddartable")
     @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Проверка Интех")
+    @DisplayName("Проверка работоспособности страницы \"Интех\"")
     void checkRshbIntech() {
         registrationPage
-                .openPage("https://rshb-intech.ru/rshb-intech")
-                .checkText(".main", "Диджитал-сердце Россельхозбанка. Мы занимаемся цифровой трансформацией крупнейшего сельскохозяйственного банка России.");
+                .openPage(baseUrl + "/rshb-intech")
+                .checkText(mainElement, digitalHeart);
     }
 
     @Test
     @Tag("Intech")
     @Owner("Goddartable")
     @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Поиск \"Генеральная лицензия Банка России № 3349 от 12 августа 2015\"")
+    @DisplayName("Поиск текста \"Генеральная лицензия Банка России № 3349 от 12 августа 2015\"")
     void checkRshbLicense() {
         registrationPage
                 .openPage(baseUrl)
-                .checkText(".main", "Генеральная лицензия Банка России № 3349 от 12 августа 2015");
+                .checkText(mainElement, genLicense);
     }
 
     @Test
     @Tag("Intech")
     @Owner("Goddartable")
     @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Поиск \"О Нас\"")
+    @DisplayName("Проверка работоспособности страницы \"О Нас\"")
     void checkRshbAboutUs() {
         registrationPage
                 .openPage(baseUrl)
-                .clickOnButton(".menu-btn")
-                .clickMenuLink(".index-page__menu", "О нас")
-                .clickMenuLink(".index-page__menu", "О платформе")
-                .checkText(".main", "РСХБ в цифре — продукт объединённой команды Россельхозбанка и РСХБ-Интеха.");
+                .clickOnButton(menuBtn)
+                .clickMenuLink(indexPage, aboutUs)
+                .clickMenuLink(indexPage, aboutPlatform)
+                .checkText(mainElement, rsDigital);
 
     }
 }

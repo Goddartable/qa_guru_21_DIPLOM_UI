@@ -1,29 +1,20 @@
 package guru.qa.utils;
 
-/*public class UserVariables {
+public class UserVariables {
     public static String
-            userFirstName = RandomUtils.getRandomFirstName(),
-            userLastName = RandomUtils.getRandomLastName(),
-            userEmail = RandomUtils.getRandomEmail(),
-            userGender = RandomUtils.getRandomGender(),
-            userPhone = RandomUtils.getRandomPhone(),
-            userDay = RandomUtils.getRandomDate(),
-            userMonth = RandomUtils.getRandomMonth(),
-            userYear = RandomUtils.getRandomYear(),
-            userSubjects = RandomUtils.getRandomSubject(),
-            userHobby = RandomUtils.getRandomHobby(),
-            userPicture = RandomUtils.getRandomPicture(),
-            userAdress = RandomUtils.getRandomAdress(),
-            userState = RandomUtils.getRandomState(),
-            userCity = RandomUtils.getRandomCity(userState),
-            studentName = "Student Name",
-            studentMail = "Student Email",
-            studentGender = "Gender",
-            studentPhone = "Mobile",
-            studentBirth = "Date of Birth",
-            studentSubs = "Subjects",
-            studentHobbs = "Hobbies",
-            studentPics = "Picture",
-            studentAddr = "Address",
-            studentSaS = "State and City";
-}*/
+            indexElement = ".index-page",
+            mainElement = ".main",
+            indexPage = ".index-page__menu",
+            menuBtn = ".menu-btn",
+            hireButton = "Нанимаем",
+            aboutUs = "О нас",
+            aboutPlatform = "О платформе",
+            rowGap = "div .row-gap",
+            vacancyHeader = "div .card-vacancy__header-info",
+            rsDigital = "РСХБ в цифре — продукт объединённой команды Россельхозбанка и РСХБ-Интеха.",
+            genLicense = "Генеральная лицензия Банка России № 3349 от 12 августа 2015",
+            citySearch = "Тверь",
+            digitalHeart = "Диджитал-сердце Россельхозбанка. Мы занимаемся цифровой трансформацией крупнейшего сельскохозяйственного банка России.";
+
+
+}

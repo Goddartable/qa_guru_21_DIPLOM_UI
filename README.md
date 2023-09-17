@@ -1,6 +1,6 @@
 # Автоматизация тестирования страницы
 
-<kbd>[![](images/results/Main.jpg)](Вставить ссылку на Главную)</kbd>
+<kbd>[![](images/results/Main.jpg)](https://rshbdigital.ru/)</kbd>
 
 ## Содержание:
 + [Стек технологий](#computer-Стек-технологий)
@@ -78,7 +78,7 @@ taskWithTagRemote
 
 ## <img width="5%" title="Allure" src="images/logo/allureTestOps.svg"> Интеграция с Allure TestOps
 #### Диаграммы прохождения тестов:
-<kbd>![](images/results/AllureTestopsScheme.jpg) (https://jenkins.autotests.cloud/job/qa_guru_homework_15_vacancy/10/allure/#suites)</kbd>
+<kbd>![](images/results/AllureTestopsScheme.jpg)</kbd>
 
 #### Развернутый результат прохождения тестов:
 | Левая часть       | Правая часть                      |

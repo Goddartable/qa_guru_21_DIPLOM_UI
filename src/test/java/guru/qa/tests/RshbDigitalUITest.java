@@ -18,7 +18,7 @@ public class RshbDigitalUITest extends TestBase {
     @Tag("remote")
     @Owner("Goddartable")
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Проверка работоспособности главной страницы")
+    @DisplayName("Проверка работоспособности главной страницы \"РСХБ в цифре\"")
     void checkRshbDigitalMain() {
         registrationPage
                 .openPage(baseUrl)
@@ -53,7 +53,7 @@ public class RshbDigitalUITest extends TestBase {
     @Tag("remote")
     @Owner("Goddartable")
     @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Поиск текста \"Генеральная лицензия Банка России № 3349 от 12 августа 2015\"")
+    @DisplayName("Проверка упоминания Генеральной лицензии Банка России")
     void checkRshbLicense() {
         registrationPage
                 .openPage(baseUrl)

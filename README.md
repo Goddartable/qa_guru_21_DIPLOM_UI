@@ -30,7 +30,11 @@
 </p>
 
 ## :clipboard: Тестовые сценарии
-+ :white_check_mark: Test
++ :white_check_mark: Проверка работоспособности главной страницы "РСХБ в цифре"
++ :white_check_mark: Проверка поиска города во вкладке "Нанимаем"
++ :white_check_mark: Проверка работоспособности страницы "Интех"
++ :white_check_mark: Проверка упоминания Генеральной лицензии Банка России
++ :white_check_mark: Проверка работоспособности страницы "О Нас"
 
 ## <img width="5%" src="images/logo/jenkins.svg"> Сборка в Jenkins
 <kbd>[![](images/results/JenkinsResult.jpg)](https://jenkins.autotests.cloud/job/qa_guru_homework_15_vacancy/)</kbd>

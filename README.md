@@ -33,7 +33,7 @@
 + :white_check_mark: Test
 
 ## <img width="5%" src="images/logo/jenkins.svg"> Сборка в Jenkins
-<kbd>[![](images/results/JenkinsResult.jpg)](Вставить ссылку на Jenkins)</kbd>
+<kbd>[![](images/results/JenkinsResult.jpg)](https://jenkins.autotests.cloud/job/qa_guru_homework_15_vacancy/)</kbd>
 
 #### Параметры сборки:
 | Параметры          | Значение                            |
@@ -43,27 +43,27 @@
 | BROWSER_VERSION    | Версия браузера                     |
 | BROWSER_RESOLUTION | Размер окна браузера                |
 
-<kbd>[![](images/results/JenkinsStart.jpg)](Вставить ссылку на build Jenkins)</kbd>
+<kbd>[![](images/results/JenkinsStart.jpg)](https://jenkins.autotests.cloud/job/qa_guru_homework_15_vacancy/build)</kbd>
 
 ## :desktop_computer: Команды запуска тестов в терминале
 #### Команды для локального запуска:
 ```bash
-./gradlew clean taskWithTagVacancy
+./gradlew clean taskWithTagRemote
 ```
 
 #### Команды для удаленного запуска:
 ```bash
-clean
-taskWithTagVacancy
--DremoteLink=${REMOTE_LINK}
+clean 
+taskWithTagRemote
+-Dremote=${REMOTE_LINK}
 -Dbrowser=${BROWSER}
--Dversion=${BROWSER_VERSION}
--Dresolution=${BROWSER_RESOLUTION}
+-DbrowserVersion=${BROWSER_VERSION}
+-DbrowserSize=${BROWSER_RESOLUTION}
 ```
 
 ## <img width="5%" title="Allure" src="images/logo/allureReport.svg"> Интеграция с Allure report
 #### Диаграммы прохождения тестов:
-<kbd>[![](images/results/AllureReportScheme.jpg)](Вставить ссылку на allure report в Jenkins)</kbd>
+<kbd>[![](images/results/AllureReportScheme.jpg)](https://jenkins.autotests.cloud/job/qa_guru_homework_15_vacancy/allure/)</kbd>
 
 #### Развернутый результат прохождения тестов:
 | Левая часть       | Правая часть                      |
@@ -78,7 +78,7 @@ taskWithTagVacancy
 
 ## <img width="5%" title="Allure" src="images/logo/allureTestOps.svg"> Интеграция с Allure TestOps
 #### Диаграммы прохождения тестов:
-<kbd>![](images/results/AllureTestopsScheme.jpg)</kbd>
+<kbd>![](images/results/AllureTestopsScheme.jpg) (https://jenkins.autotests.cloud/job/qa_guru_homework_15_vacancy/10/allure/#suites)</kbd>
 
 #### Развернутый результат прохождения тестов:
 | Левая часть       | Правая часть                      |
@@ -95,14 +95,9 @@ taskWithTagVacancy
 <kbd>![](images/results/JiraResult.jpg)</kbd>
 
 ## :cinema: Видео прохождения тестов
-#### :white_check_mark: Проверка ввода некорректного значения для поика вакансии:
+#### :white_check_mark: Проверка поиска города во вкладке "Нанимаем":
 <p align="center">
   <img src="images/results/VideoResult1.gif">
-</p>
-
-#### :white_check_mark: Test":
-<p align="center">
-  <img src="images/results/VideoResult.gif">
 </p>
 
 

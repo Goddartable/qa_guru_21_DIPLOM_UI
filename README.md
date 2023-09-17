@@ -96,7 +96,7 @@ taskWithTagRemote
 <kbd>![](images/results/JiraResult.jpg)</kbd>
 
 ## :cinema: Видео прохождения тестов 
-#### :white_check_mark: Проверка поиска города во вкладке "Нанимаем":
+#### :white_check_mark: Проверка работоспособности страницы "О Нас":
 <p align="center">
   <img src="images/results/VideoResult1.gif">
 </p>

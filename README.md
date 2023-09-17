@@ -95,7 +95,7 @@ taskWithTagRemote
 ## <img width="5%" title="Jira" src="images/logo/jira.svg"> Интеграция с Jira
 <kbd>![](images/results/JiraResult.jpg)</kbd>
 
-## :cinema: Видео прохождения тестов 
+## :cinema: Пример видео прохождения тестов 
 #### :white_check_mark: Проверка работоспособности страницы "О Нас":
 <p align="center">
   <img src="images/results/VideoResult1.gif">

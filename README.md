@@ -46,10 +46,7 @@
 <kbd>[![](images/results/JenkinsStart.jpg)](https://jenkins.autotests.cloud/job/qa_guru_homework_15_vacancy/build)</kbd>
 
 ## :desktop_computer: Команды запуска тестов в терминале
-#### Команды для локального запуска:
-```bash
-./gradlew clean taskWithTagRemote
-```
+
 
 #### Команды для удаленного запуска:
 ```bash
@@ -94,7 +91,7 @@ taskWithTagRemote
 ## <img width="5%" title="Jira" src="images/logo/jira.svg"> Интеграция с Jira
 <kbd>![](images/results/JiraResult.jpg)</kbd>
 
-## :cinema: Видео прохождения тестов
+## :cinema: Видео прохождения тестов 
 #### :white_check_mark: Проверка поиска города во вкладке "Нанимаем":
 <p align="center">
   <img src="images/results/VideoResult1.gif">

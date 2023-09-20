@@ -19,7 +19,7 @@ public class RshbDigitalUITest extends TestBase {
     @Owner("Goddartable")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Проверка работоспособности главной страницы \"РСХБ в цифре\"")
-    void checkRshbDigitalMain() {
+    void checkRshbDigitalMainTest() {
         registrationPage
                 .openPage(baseUrl)
                 .checkText(indexElement, rsDigital);
@@ -30,7 +30,7 @@ public class RshbDigitalUITest extends TestBase {
     @Owner("Goddartable")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка поиска города во вкладке \"Нанимаем\"")
-    void checkRshbDigitalVacancy() {
+    void checkRshbDigitalVacancyTest() {
         registrationPage
                 .openPage(baseUrl)
                 .clickMenuLink(rowGap, hireButton)
@@ -43,7 +43,7 @@ public class RshbDigitalUITest extends TestBase {
     @Owner("Goddartable")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка работоспособности страницы \"Интех\"")
-    void checkRshbIntech() {
+    void checkRshbIntechTest() {
         registrationPage
                 .openPage(baseUrl + "/rshb-intech")
                 .checkText(mainElement, digitalHeart);
@@ -54,7 +54,7 @@ public class RshbDigitalUITest extends TestBase {
     @Owner("Goddartable")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка упоминания Генеральной лицензии Банка России")
-    void checkRshbLicense() {
+    void checkRshbLicenseTest() {
         registrationPage
                 .openPage(baseUrl)
                 .checkText(mainElement, genLicense);
@@ -65,7 +65,7 @@ public class RshbDigitalUITest extends TestBase {
     @Owner("Goddartable")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка работоспособности страницы \"О Нас\"")
-    void checkRshbAboutUs() {
+    void checkRshbAboutUsTest() {
         registrationPage
                 .openPage(baseUrl)
                 .clickOnButton(menuBtn)

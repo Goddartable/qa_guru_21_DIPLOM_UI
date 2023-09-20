@@ -75,7 +75,7 @@ taskWithTagRemote
 |                   | Исходники консоли браузера        |
 |                   | Финальный ролик с процессом теста |
 
-<kbd>[![](images/results/AllureReportTestCases.jpg)](Вставить ссылку на AllureReportTestCases)</kbd>
+<kbd>[![](images/results/AllureReportTestCases.jpg)](https://jenkins.autotests.cloud/job/qa_guru_homework_15_vacancy/12/allure/#suites)</kbd>
 
 ## <img width="5%" title="Allure" src="images/logo/allureTestOps.svg"> Интеграция с Allure TestOps
 #### Диаграммы прохождения тестов:

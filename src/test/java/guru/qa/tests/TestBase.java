@@ -18,7 +18,6 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
         SelenideLogger.addListener("Allure", new AllureSelenide());
-        SelenideLogger.addListener("allure", new AllureSelenide());
         WebConfigProject webConfigForProject = new WebConfigProject(config);
         webConfigForProject.webConfig();
     }

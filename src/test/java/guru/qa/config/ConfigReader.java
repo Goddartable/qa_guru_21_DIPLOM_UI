@@ -9,6 +9,7 @@ public enum ConfigReader {
                     WebConfig.class,
                     System.getProperties()
             );
+
     public WebConfig read() {
         return webConfig;
     }

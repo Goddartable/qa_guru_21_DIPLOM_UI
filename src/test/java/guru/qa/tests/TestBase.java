@@ -4,6 +4,9 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import guru.qa.attachments.ReportAttachments;
+import guru.qa.config.ConfigReader;
+import guru.qa.config.WebConfig;
+import guru.qa.config.WebConfigProject;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.AfterEach;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -14,26 +17,13 @@ import java.util.Map;
 
 
 public class TestBase {
+    private static final WebConfig config = ConfigReader.Instance.read();
     @BeforeAll
     static void beforeAll() {
         SelenideLogger.addListener("Allure", new AllureSelenide());
-        Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
-        Configuration.browserVersion = System.getProperty("browserVersion", "100.0");
-        Configuration.pageLoadStrategy = "eager";
-        Configuration.timeout = 10000;
-        Configuration.baseUrl = "https://rshbdigital.ru/";
-        Configuration.remote = "https://" + System.getProperty("remote") + "/wd/hub";
-
-
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        Map<String, Object> value = new HashMap<>();
-        value.put("enableVNC", true);
-        value.put("enableVideo", true);
-        capabilities.setCapability("selenoid:options", value);
-
-        Configuration.browserCapabilities = capabilities;
-
+        SelenideLogger.addListener("allure", new AllureSelenide());
+        WebConfigProject webConfigForProject = new WebConfigProject(config);
+        webConfigForProject.webConfig();
     }
 
 
@@ -45,7 +35,5 @@ public class TestBase {
         ReportAttachments.browserConsoleLogs();
 
         Selenide.closeWebDriver();
-
-
     }
 }

@@ -74,4 +74,36 @@ public class RshbDigitalUITest extends TestBase {
                 .checkText(mainElement, rsDigital);
 
     }
+
+    @Test
+    @Tag("remote")
+    @Owner("Goddartable")
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Проверка отображения формы обратной связи")
+    void checkRshbRemotePanelTest() {
+        registrationPage
+                .openPage(baseUrl)
+                .clickOnButton(feedbackButton)
+                .elementAppears(feedbackWindow)
+                .checkText(feedbackWindow, phone)
+                .checkText(feedbackWindow, email)
+                .checkText(feedbackWindow, fio)
+                .checkText(feedbackWindow, enterText);
+
+    }
+
+    @Test
+    @Tag("remote")
+    @Owner("Goddartable")
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Проверка попытки отправки пустой формы обратной связи")
+    void checkRshbRemotePanelSubmitErrorTest() {
+        registrationPage
+                .openPage(baseUrl)
+                .clickOnButton(feedbackButton)
+                .elementAppears(feedbackWindow)
+                .clickMenuLink(feedbackWindow, submitBtn)
+                .checkText(feedbackWindow, checkError);
+
+    }
 }

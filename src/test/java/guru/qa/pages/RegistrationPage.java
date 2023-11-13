@@ -41,4 +41,10 @@ public class RegistrationPage {
         return this;
     }
 
+    @Step("Модальное окно появилось")
+    public RegistrationPage elementAppears(String element){
+        $(element).should(Condition.appear);
+        return this;
+    }
+
 }

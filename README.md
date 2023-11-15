@@ -35,6 +35,8 @@
 + :white_check_mark: Проверка работоспособности страницы "Интех"
 + :white_check_mark: Проверка упоминания Генеральной лицензии Банка России
 + :white_check_mark: Проверка работоспособности страницы "О Нас"
++ :white_check_mark: Проверка отображения формы обратной связи
++ :white_check_mark: Проверка попытки отправки пустой формы обратной связи
 
 ## <img width="5%" src="images/logo/jenkins.svg"> Сборка в Jenkins
 <kbd>[![](images/results/JenkinsResult.jpg)](https://jenkins.autotests.cloud/job/qa_guru_homework_15_vacancy/)</kbd>

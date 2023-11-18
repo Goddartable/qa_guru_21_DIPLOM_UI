@@ -39,7 +39,7 @@
 + :white_check_mark: Проверка попытки отправки пустой формы обратной связи
 
 ## <img width="5%" src="images/logo/jenkins.svg"> Сборка в Jenkins
-<kbd>[![](images/results/JenkinsResult.jpg)](https://jenkins.autotests.cloud/job/qa_guru_homework_15_vacancy/)</kbd>
+<kbd>[![](images/results/JenkinsResult.jpg)](https://jenkins.autotests.cloud/job/qa_guru_21_DIPLOM_UI/)</kbd>
 
 #### Параметры сборки:
 | Параметры          | Значение                            |
@@ -49,7 +49,7 @@
 | BROWSER_VERSION    | Версия браузера                     |
 | BROWSER_RESOLUTION | Размер окна браузера                |
 
-<kbd>[![](images/results/JenkinsStart.jpg)](https://jenkins.autotests.cloud/job/qa_guru_homework_15_vacancy/build)</kbd>
+<kbd>[![](images/results/JenkinsStart.jpg)](https://jenkins.autotests.cloud/job/qa_guru_21_DIPLOM_UI/build?delay=0sec)</kbd>
 
 ## :desktop_computer: Команды запуска тестов в терминале
 
@@ -66,7 +66,7 @@ taskWithTagRemote
 
 ## <img width="5%" title="Allure" src="images/logo/allureReport.svg"> Интеграция с Allure report
 #### Диаграммы прохождения тестов:
-<kbd>[![](images/results/AllureReportScheme.jpg)](https://jenkins.autotests.cloud/job/qa_guru_homework_15_vacancy/allure/)</kbd>
+<kbd>[![](images/results/AllureReportScheme.jpg)](https://jenkins.autotests.cloud/job/qa_guru_21_DIPLOM_UI/8/allure/)</kbd>
 
 #### Развернутый результат прохождения тестов:
 | Левая часть       | Правая часть                      |
@@ -77,7 +77,7 @@ taskWithTagRemote
 |                   | Исходники консоли браузера        |
 |                   | Финальный ролик с процессом теста |
 
-<kbd>[![](images/results/AllureReportTestCases.jpg)](https://jenkins.autotests.cloud/job/qa_guru_homework_15_vacancy/12/allure/#suites)</kbd>
+<kbd>[![](images/results/AllureReportTestCases.jpg)](https://jenkins.autotests.cloud/job/qa_guru_21_DIPLOM_UI/8/allure/#suites)</kbd>
 
 ## <img width="5%" title="Allure" src="images/logo/allureTestOps.svg"> Интеграция с Allure TestOps
 #### Диаграммы прохождения тестов:

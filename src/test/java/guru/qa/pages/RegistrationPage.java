@@ -23,7 +23,7 @@ public class RegistrationPage {
 
     @Step("Выбираем пункт меню \"{menuText}\"")
     public RegistrationPage clickMenuLink(String selector, String menuText) {
-        $(selector).$(byText(menuText)).click();
+        $(selector).$((menuText)).click();
         return this;
     }
 
@@ -42,7 +42,7 @@ public class RegistrationPage {
     }
 
     @Step("Модальное окно появилось")
-    public RegistrationPage elementAppears(String element){
+    public RegistrationPage elementAppears(String element) {
         $(element).should(Condition.appear);
         return this;
     }

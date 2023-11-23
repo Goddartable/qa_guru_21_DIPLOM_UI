@@ -22,7 +22,7 @@ public class RshbDigitalUITest extends TestBase {
     void checkRshbDigitalMainTest() {
         registrationPage
                 .openPage(baseUrl)
-                .checkText(indexElement, rsDigital);
+                .checkIndexElementText(rsDigital);
     }
 
     @Test
@@ -33,9 +33,9 @@ public class RshbDigitalUITest extends TestBase {
     void checkRshbDigitalVacancyTest() {
         registrationPage
                 .openPage(baseUrl)
-                .clickMenuLink(rowGap, hireButton)
+                .clickRowGapLinkTest(hireButton)
                 .searchInput(citySearch)
-                .checkText(vacancyHeader, citySearch);
+                .checkVacancyHeaderText(citySearch);
     }
 
     @Test
@@ -46,7 +46,7 @@ public class RshbDigitalUITest extends TestBase {
     void checkRshbIntechTest() {
         registrationPage
                 .openPage(baseUrl + "/rshb-intech")
-                .checkText(mainElement, digitalHeart);
+                .checkMainElementText(digitalHeart);
     }
 
     @Test
@@ -57,7 +57,7 @@ public class RshbDigitalUITest extends TestBase {
     void checkRshbLicenseTest() {
         registrationPage
                 .openPage(baseUrl)
-                .checkText(mainElement, genLicense);
+                .checkMainElementText(genLicense);
     }
 
     @Test
@@ -68,10 +68,10 @@ public class RshbDigitalUITest extends TestBase {
     void checkRshbAboutUsTest() {
         registrationPage
                 .openPage(baseUrl)
-                .clickOnButton(menuBtn)
-                .clickMenuLink(indexPage, aboutUs)
-                .clickMenuLink(indexPage, aboutPlatform)
-                .checkText(mainElement, rsDigital);
+                .clickOnMenuButton()
+                .clickIndexPageLink(aboutUs)
+                .clickIndexPageLink(aboutPlatform)
+                .checkMainElementText(rsDigital);
 
     }
 
@@ -83,12 +83,12 @@ public class RshbDigitalUITest extends TestBase {
     void checkRshbRemotePanelTest() {
         registrationPage
                 .openPage(baseUrl)
-                .clickOnButton(feedbackButton)
-                .elementAppears(feedbackWindow)
-                .checkText(feedbackWindow, phone)
-                .checkText(feedbackWindow, email)
-                .checkText(feedbackWindow, fio)
-                .checkText(feedbackWindow, enterText);
+                .clickOnfeedbackButton()
+                .feedbackWindowAppears()
+                .checkFeedbackWindowText(phone)
+                .checkFeedbackWindowText(email)
+                .checkFeedbackWindowText(fio)
+                .checkFeedbackWindowText(enterText);
 
     }
 
@@ -100,10 +100,9 @@ public class RshbDigitalUITest extends TestBase {
     void checkRshbRemotePanelSubmitErrorTest() {
         registrationPage
                 .openPage(baseUrl)
-                .clickOnButton(feedbackButton)
-                .elementAppears(feedbackWindow)
-                .clickMenuLink(feedbackWindow, submitBtn)
-                .checkText(feedbackWindow, checkError);
-
+                .clickOnfeedbackButton()
+                .feedbackWindowAppears()
+                .clickFeedbackWindowLink(submitBtn)
+                .checkFeedbackWindowText(checkError);
     }
 }

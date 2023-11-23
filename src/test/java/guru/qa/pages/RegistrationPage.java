@@ -16,14 +16,44 @@ public class RegistrationPage {
     }
 
     @Step("Проверяем наличие текста \"{textElement}\"")
-    public RegistrationPage checkText(String selector, String textElement) {
-        $(selector).shouldHave(Condition.text(textElement));
+    public RegistrationPage checkIndexElementText(String textElement) {
+        $(".index-page").shouldHave(Condition.text(textElement));
+        return this;
+    }
+
+    @Step("Проверяем наличие текста \"{textElement}\"")
+    public RegistrationPage checkVacancyHeaderText(String textElement) {
+        $(".card-vacancy__header-info").shouldHave(Condition.text(textElement));
+        return this;
+    }
+
+    @Step("Проверяем наличие текста \"{textElement}\"")
+    public RegistrationPage checkFeedbackWindowText(String textElement) {
+        $(".modal__body").shouldHave(Condition.text(textElement));
         return this;
     }
 
     @Step("Выбираем пункт меню \"{menuText}\"")
-    public RegistrationPage clickMenuLink(String selector, String menuText) {
-        $(selector).$((menuText)).click();
+    public RegistrationPage clickRowGapLinkTest(String menuText) {
+        $(".row-gap").$((menuText)).click();
+        return this;
+    }
+
+    @Step("Проверяем наличие текста \"{textElement}\"")
+    public RegistrationPage checkMainElementText(String textElement) {
+        $(".main").shouldHave(Condition.text(textElement));
+        return this;
+    }
+
+    @Step("Выбираем пункт меню \"{menuText}\"")
+    public RegistrationPage clickIndexPageLink(String menuText) {
+        $(".index-page__menu").$((menuText)).click();
+        return this;
+    }
+
+    @Step("Выбираем пункт меню \"{menuText}\"")
+    public RegistrationPage clickFeedbackWindowLink(String menuText) {
+        $(".modal__body").$((menuText)).click();
         return this;
     }
 
@@ -35,16 +65,21 @@ public class RegistrationPage {
         return this;
     }
 
+    @Step("Нажимаем на кнопку Меню")
+    public RegistrationPage clickOnMenuButton() {
+        $(".menu-btn").click();
+        return this;
+    }
+
     @Step("Нажимаем на кнопку")
-    public RegistrationPage clickOnButton(String button) {
-        $(button).click();
+    public RegistrationPage clickOnfeedbackButton() {
+        $(".button--green--empty").click();
         return this;
     }
 
     @Step("Модальное окно появилось")
-    public RegistrationPage elementAppears(String element) {
-        $(element).should(Condition.appear);
+    public RegistrationPage feedbackWindowAppears() {
+        $(".modal__body").should(Condition.appear);
         return this;
     }
-
 }

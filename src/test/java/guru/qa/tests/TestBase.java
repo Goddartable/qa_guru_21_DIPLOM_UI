@@ -22,14 +22,12 @@ public class TestBase {
         webConfigForProject.webConfig();
     }
 
-
     @AfterEach
     void afterEachTest() {
         ReportAttachments.addVideo();
         ReportAttachments.attachScreenshot();
         ReportAttachments.pageSource();
         ReportAttachments.browserConsoleLogs();
-
         Selenide.closeWebDriver();
     }
 }

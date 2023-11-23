@@ -59,8 +59,8 @@ public class RegistrationPage {
 
     @Step("Начинаем поиск значения \"{textValue}\"")
     public RegistrationPage searchInput(String textValue) {
-        $("div .vacancies__search-city").click();
-        $("div .vacancies__search-items").$(byText(textValue)).click();
+        $(".vacancies__search-city").click();
+        $(".vacancies__search-items").$(byText(textValue)).click();
         $(byText("Найти")).click();
         return this;
     }
